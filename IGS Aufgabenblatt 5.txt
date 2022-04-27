@@ -7,8 +7,8 @@
 // 		3 : Oranger Knopf
 // Beispiel Code: Wenn du den Orangenen KnopfDrückst fährt der Roboter.
  task main(){
-	while(){
-		if(ButtonPressed(3)){	// Wenn ( Der Knopf 3 gedrückt ist ){ mach das hier}	
+	while(true){
+		if(ButtonPressed(3,false)){	// Wenn ( Der Knopf 3 gedrückt ist ){ mach das hier}	
 			Fwd(OUT_ABC,100);
 			Wait(100);
 			Off(OUT_ABC);
@@ -19,8 +19,8 @@
 // Aufgabe 1: Entscheide selbst was der Roboter Auf Knopfdruck machen soll.
 //			 Dabei kannst du entscheiden welcher Knopf benutzt wird. (siehe oben)
   task main(){
-	while(){
-		if(ButtonPressed(?)){	// Wenn ( Der Knopf  Gedrückt ist ){ mach das hier}		
+	while(true){
+		if(ButtonPressed(?,false)){	// Wenn ( Der Knopf  Gedrückt ist ){ mach das hier}		
 			// Hier muss du Programmieren was der Roboter machen soll.
 		}
 	}
