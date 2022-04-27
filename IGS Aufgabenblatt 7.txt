@@ -27,6 +27,6 @@ task main(){
 		break;
 	}
 	Wait(5);
-	Off(Out_A);
+	Off(OUT_A);
   }
 }
