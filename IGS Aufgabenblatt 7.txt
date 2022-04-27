@@ -12,12 +12,10 @@ task main(){
 }
 
 
-
 // Programm um den Robotorarm zu steuern.
 //Bennutze die Pfeiltasten.
 
 task main(){
-while(true)
   while(true){
 	if(ButtonPressed(1,false)){
 		OnFwd(OUT_A,25);
