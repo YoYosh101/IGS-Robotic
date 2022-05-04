@@ -24,7 +24,7 @@ task main(){
 	 SetSensorSound(IN_2);
 	 while(true){
 		NumOut(10, LCD_LINE4, SENSOR_2);
-		Wait(75);
+		Wait(200);
 		ClearScreen();
 	}
 }
@@ -35,14 +35,14 @@ task main(){
 // nun muss die GERÄUSCHGRENZE so gesetzt werden, 
 // dass du den Roboter mit geräuschen AN und AUS schalten kannst.
 
-#define GERÄUSCHGRENZE ?
+#define GEREUSCHGRENZE ?
 task main(){
 	 SetSensorSound(IN_2);
 	 while(true){
-		 until(SENSOR_2 > GERÄUSCHGRENZE);
+		 until(SENSOR_2 > GEREUSCHGRENZE);
 		 OnFwd(OUT_?, 75);
 		 Wait(300);
-		 until(SENSOR_2 > GERÄUSCHGRENZE);
+		 until(SENSOR_2 > GEREUSCHGRENZE);
 		 Off(OUT_?);
 		 Wait(300);
 	}
