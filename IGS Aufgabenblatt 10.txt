@@ -22,7 +22,7 @@ task main (){
 	
 		if(SENSOR_3 ? SCHWARZWERT ){				// Der Wert der den Sensor misst wird mit einem von dir gewählten Wert verglichen. Das Fragezeichen(?) muss Größer(>), kleiner(<), oder gleich(=) sein.
 			OnFwd( ?, ?);							// Motor vorwärts fahren - OnFwd( Motoranschlüsse , Geschwindigkeit );								
-		}esle{										// wenn aktueller Sensorwert NICHT größer ist als ? dann die nächste zeile ausgeführt
+		}else{										// wenn aktueller Sensorwert NICHT größer ist als ? dann die nächste zeile ausgeführt
 			Off(?);									// Motoren aus machen. Off( Motoranschlüsse );
 		}
 	}												// Endlosscheife ende
